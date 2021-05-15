@@ -1,0 +1,300 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+body {
+    overflow-x: hidden ;
+}
+header, body main h1 {
+    margin-left: 6vw;
+}
+header {
+    position: relative;
+    margin-top: 6vw;
+    margin-bottom: 50px;
+    word-spacing: 10px;
+}
+header span {
+    color: #2289e5;
+    margin-left: 1.5vw;
+}
+header p {
+    text-shadow: 4px 4px #d4d4d4;
+    color: #e67e22;
+    font-size: 70px;
+    font-weight: bold;
+    word-spacing: 0.5vw;
+}
+main {
+    margin-bottom: 100px;
+}
+main ul div li img {
+    width: 250px;
+}
+main ul {
+    text-align: center;
+}
+main h1 {
+    position: relative;
+    padding: 30px 0;
+    font-size: 50px;
+    width: 600px;
+    transform-origin: left;
+    animation-duration: 1s;
+    animation-name: rotateoff;
+}
+@-webkit-keyframes rotateoff {
+    from {
+        transform: rotate(5deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+main ul li {
+    display: inline-block;
+    margin: 20px;
+    border: 3px solid #e68025;
+    border-radius: 15%;
+    text-align: left;
+}
+main ul li img {
+    object-fit: cover;
+    margin: -3px;
+    object-position: center;
+    width: 300px;
+    transition: width 1s;
+    height: 200px;
+    border: 3px solid #2475bd;
+    border-radius: 15%;
+}
+main ul li img:hover {
+    width: 350px;
+}
+@-webkit-keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(5deg);
+    }
+}
+main h1:hover {
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.pavadinimas {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.kategorija {
+    border-bottom: 2px solid #228ae6;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.price {
+    color: #00ff00;
+    float: left;
+    margin-left: 20px;
+}
+.stars {
+    float: right;
+    margin-right: 25px;
+}
+.rating {
+    text-align: center;
+}
+footer {
+    display: flex;
+    width: 100%;
+    height: 85px;
+    background: #ffffff;
+    bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.47);
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    transition: 1s;
+}
+footer ul li {
+    text-align: center;
+    float: left;
+    height: 100%;
+    width: 150px;
+}
+footer:hover {
+    background: #e67e22;
+}
+footer:hover p{
+    color: white;
+}
+footer:hover #logo {
+    background-image: url("../images/logowhite.png");
+    text-align: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer:hover #netoliese {
+    background-image: url("../images/netoliesewhite.png");
+    text-align: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer:hover #eile {
+    background-image: url("../images/eilewhite.png");
+    text-align: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer:hover #meniu {
+    background-image: url("../images/meniuwhite.png");
+    text-align: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer ul li:hover {
+    color: white;
+}
+#netoliese, #eile, #meniu {
+    text-align: center;
+    margin-top: 2px;
+    height: 50px;
+    transition: 1s;
+}
+#netoliese:hover, #eile:hover, #meniu:hover {
+    height: 60px;
+}
+#logo:hover {
+    height: 110px;
+}
+#netoliese {
+    background-image: url("../images/netoliese.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#logo {
+    background-image: url('../images/logo.png');
+    text-align: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    margin-top: -20px;
+    margin-bottom: -30px;
+    transition: 1s;
+}
+#eile {
+    background-image: url("../images/eile.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#meniu {
+    background-image: url("../images/meniu.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer ul li p {
+    font-size: 20px;
+}
+
+
+
+@media only screen and (min-width: 1740px) {
+    header p {
+        text-shadow: 5px 5px #d4d4d4;
+        font-size: 80px;
+    }
+    main ul div li img {
+        width: 400px;
+    }
+    main h1 {
+        font-size: 60px;
+        width: 800px;
+    }
+    main ul li {
+        margin: 60px;
+    }
+    main ul li img {
+        width: 450px;
+        height: 300px;
+    }
+    .pavadinimas {
+        font-size: 45px;
+        margin-left: 20px;
+    }
+    .kategorija {
+        font-size: 28px;
+        margin-left: 20px;
+    }
+    .price {
+        margin-left: 50px;
+    }
+    .stars {
+        margin-right: 50px;
+    }
+    .rating {
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 451px) {
+    header p {
+        font-size: 80px;
+    }
+    main {
+        margin-bottom: 150px;
+    }
+    main ul div li img {
+        width: 225px;
+    }
+    main ul li {
+        margin: 15px;
+    }
+    main ul li img {
+        width: 250px;
+        height: 150px;
+    }
+    .kategorija {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 450px) and (min-width: 0) {
+    header p {
+        font-size: 80px;
+    }
+    main {
+        margin-bottom: 150px;
+    }
+    main ul div li img {
+        width: 225px;
+    }
+    main ul li {
+        margin: 15px;
+    }
+    main ul li img {
+        width: 250px;
+        height: 200px;
+    }
+    .kategorija {
+        font-size: 20px;
+    }
+}
+
+
